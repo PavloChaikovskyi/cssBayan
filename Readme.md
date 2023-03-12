@@ -10,7 +10,7 @@ Task requerenments:
 - equal indents left and right; 
 - change cursor when it is hovering over the accordion; 
 - initially the first meme should be expanded; 
-- font size should be changed at each device; 
+- font size should be changed at each device;  + 
 
 min 5 commits: 
 
