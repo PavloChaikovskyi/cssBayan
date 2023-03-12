@@ -1,3 +1,58 @@
+/* CSS RESET START */
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles */
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Set default font family */
+body {
+  font-family: sans-serif;
+}
+
+/* Set default font size and line height */
+body {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Remove default padding */
+p,
+figure,
+blockquote,
+dl,
+dd {
+  padding: 0;
+}
+
+
+/* CSS RESET END  */
+
+
 svg {
     max-width: 50px;
 }
