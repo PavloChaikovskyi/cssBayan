@@ -93,13 +93,9 @@ label {
     display: block;
 }
 
-label:hover > input[type="radio"] ~ img {
-    height: 600px;
-}
 
-label:hover > input[type="radio"] ~ svg {
-    transform: rotate(45deg);
-}
+
+
 
 svg {
     position: absolute;
@@ -126,18 +122,24 @@ input[type="radio"]:checked ~ p {
     color: black;
 }
 
-.container:hover, label:hover  {
-    cursor: pointer;
-}
 
-.container:hover  p {
-    color: black; 
+@media (hover: hover) {
+    label:hover > input[type="radio"] ~ img {
+        height: 600px;
+    }
+    label:hover > input[type="radio"] ~ svg {
+        transform: rotate(45deg);
+    }
+    .container:hover, label:hover  {
+        cursor: pointer;
+    }
+    .container:hover  p {
+        color: black; 
+    }
+    .container:hover  svg {
+        opacity: 1;
+    }
 }
-
-.container:hover  svg {
-    opacity: 1;
-}
-
 
 
 @media only screen and (max-width: 1920px) {
