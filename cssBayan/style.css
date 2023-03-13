@@ -1,0 +1,172 @@
+/* CSS RESET START */
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles */
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Set default font family */
+body {
+  font-family: sans-serif;
+}
+
+/* Set default font size and line height */
+body {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Remove default padding */
+p,
+figure,
+blockquote,
+dl,
+dd {
+  padding: 0;
+}
+
+
+/* CSS RESET END  */
+
+
+svg {
+    width: 40px;
+    height: 40px;
+    transition: 0.5s; 
+}
+
+img {
+    max-width: 100%;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+.container {
+    margin: 0 auto; 
+    max-width: 1920px;
+    padding: 0 15px;
+}
+
+p {
+    font-size: 32px;
+    color: blue;
+}
+
+input {
+    opacity: 0;
+    position: absolute;
+}
+
+label {
+    border-top: 2px #666 solid;
+    padding-right: 40px;
+    position: relative;
+    display: block;
+}
+
+
+
+
+
+svg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0;
+}
+
+input[type="radio"] ~ img {
+     height: 0;
+     max-height: 60vh;
+     transition: 0.5s; 
+}
+
+input[type="radio"]:checked ~ img {
+    height: 600px;
+}
+
+input[type="radio"]:checked ~ svg {
+    transform: rotate(45deg);
+}
+
+input[type="radio"]:checked ~ p {
+    color: black;
+}
+
+
+@media (hover: hover) {
+    label:hover > input[type="radio"] ~ img {
+        height: 600px;
+    }
+    label:hover > input[type="radio"] ~ svg {
+        transform: rotate(45deg);
+    }
+    .container:hover, label:hover  {
+        cursor: pointer;
+    }
+    .container:hover  p {
+        color: black; 
+    }
+    .container:hover  svg {
+        opacity: 1;
+    }
+}
+
+
+@media only screen and (max-width: 1920px) {
+    .container {
+        max-width: 80%;
+        padding: 0 25px;
+    }
+    p {
+        font-size: 28px;
+    }
+    h1 {
+        font-size: 32px;
+    }
+}
+
+@media only screen and (max-width: 820px) {
+    .container {
+        max-width: 100%;
+    }
+    p {
+        font-size: 18px;
+    }
+    h1 {
+        font-size: 22px;
+    }
+    svg {
+        width: 27px;
+        height: 27px;
+    }
+}
